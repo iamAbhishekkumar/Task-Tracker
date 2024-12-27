@@ -11,14 +11,6 @@ public class Task {
 	private Instant createdAt;
 	private Instant updatedAt;
 
-	public Task(Long id, String desc, TaskStatus status, Instant createdAt, Instant updatedAt) {
-		super();
-		this.id = id;
-		this.desc = desc;
-		this.status = status;
-		this.createdAt = createdAt;
-		this.updatedAt = updatedAt;
-	}
 
 	public Long getId() {
 		return id;
