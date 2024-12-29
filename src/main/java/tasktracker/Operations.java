@@ -1,7 +1,6 @@
 package tasktracker;
 
-import java.time.Instant;
-import java.util.List;
+import java.util.Date;
 import java.util.Map;
 
 import tasktracker.helpers.TaskStatus;
@@ -14,7 +13,10 @@ public class Operations {
 	private String[] args;
 	private JsonProcessor jsonProcessor;
 
+	
+
 	public Operations(String[] args) {
+		super();
 		this.args = args;
 		this.jsonProcessor = new JsonProcessor();
 	}
@@ -58,8 +60,8 @@ public class Operations {
 			task.setId(id);
 			task.setDesc(args[1]);
 			task.setStatus(TaskStatus.TODO);
-			task.setUpdatedAt(Instant.now());
-			task.setCreatedAt(Instant.now());
+			task.setUpdatedAt(new Date());
+			task.setCreatedAt(new Date());
 			
 			if(0 == jsonProcessor.addToJson(task)) 
 				System.out.printf("Sucessfully added the task with ID : %s\n",id);
@@ -68,7 +70,7 @@ public class Operations {
 			
 		} else {
 			invalidOperation();
-			menu();
+			// correct usage of add
 		}
 	}
 

@@ -1,6 +1,7 @@
 package tasktracker.model;
 
 import java.time.Instant;
+import java.util.Date;
 
 import tasktracker.helpers.TaskStatus;
 
@@ -8,8 +9,8 @@ public class Task {
 	private Long id;
 	private String desc;
 	private TaskStatus status;
-	private Instant createdAt;
-	private Instant updatedAt;
+	private Date createdAt;
+	private Date updatedAt;
 
 
 	public Long getId() {
@@ -36,19 +37,19 @@ public class Task {
 		this.status = status;
 	}
 
-	public Instant getCreatedAt() {
+	public Date getCreatedAt() {
 		return createdAt;
 	}
 
-	public void setCreatedAt(Instant createdAt) {
+	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
 	}
 
-	public Instant getUpdatedAt() {
+	public Date getUpdatedAt() {
 		return updatedAt;
 	}
 
-	public void setUpdatedAt(Instant updatedAt) {
+	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
 
