@@ -2,6 +2,6 @@ package tasktracker.helpers;
 
 public enum TaskStatus{
 	TODO,
-	INPROGRESS,
+	IN_PROGRESS,
 	DONE
 }
