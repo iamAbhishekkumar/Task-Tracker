@@ -1,7 +1,7 @@
 # Task-Tracker 📓
 [![Build and Release JAR](https://github.com/iamAbhishekkumar/Task-Tracker-Java/actions/workflows/maven.yml/badge.svg)](https://github.com/iamAbhishekkumar/Task-Tracker-Java/actions/workflows/maven.yml)
 
-This repository includes java as well as golang implementation of the [project mentioned in roadmap.sh](https://roadmap.sh/projects/task-tracker)
+This repository includes java implementation of the [project mentioned in roadmap.sh](https://roadmap.sh/projects/task-tracker)
 
 ### Requirements
 Should have java 8 or above
